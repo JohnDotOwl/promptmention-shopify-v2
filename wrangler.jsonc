@@ -22,6 +22,10 @@
     "not_found_handling": "single-page-application",
     "run_worker_first": ["/assets/*", "/favicon.svg", "/robots.txt"]
   },
-  // NOTE: Add this route manually in Cloudflare Dashboard where promptmention.com zone exists:
-  // "routes": [{ "pattern": "shopify.promptmention.com", "custom_domain": true, "zone_name": "promptmention.com" }]
+  "routes": [
+    {
+      "pattern": "shopify.promptmention.com",
+      "custom_domain": true
+    }
+  ]
 }
