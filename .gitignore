@@ -1,0 +1,26 @@
+# Dependencies
+node_modules/
+
+# Build outputs
+dist/
+dist.zip
+*.tsbuildinfo
+
+# Environment files (only commit .env, not local overrides)
+.env.local
+.env.*.local
+.dev.vars
+
+# macOS
+.DS_Store
+
+# IDE
+.vscode/
+.idea/
+
+# Logs
+*.log
+npm-debug.log*
+
+# Wrangler
+.wrangler/

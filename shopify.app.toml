@@ -1,0 +1,19 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+client_id = "a073fa772fac93d816eeec46ccaffa27"
+name = "PromptMention"
+application_url = "https://localhost:5176"
+embedded = true
+
+[build]
+automatically_update_urls_on_dev = true
+include_config_on_deploy = true
+
+[webhooks]
+api_version = "2026-04"
+
+[access_scopes]
+scopes = "read_products,read_content"
+
+[auth]
+redirect_urls = [ "https://localhost:5176/api/shopify/callback", "http://localhost:5176/api/shopify/callback" ]

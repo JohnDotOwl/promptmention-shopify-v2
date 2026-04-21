@@ -1,0 +1,73 @@
+@import "tailwindcss";
+
+@custom-variant dark (.dark &);
+
+@theme {
+  --font-sans:
+    'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+}
+
+@layer base {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-gray-200, currentColor);
+  }
+}
+
+:root {
+  --background: oklch(1 0 0);
+  --foreground: oklch(0.145 0 0);
+  --border: oklch(0.922 0 0);
+
+  --p-color-bg: #ffffff;
+  --p-color-bg-hover: #f6f6f7;
+  --p-color-bg-active: #f1f2f4;
+  --p-color-bg-subdued: #f6f6f7;
+  --p-color-bg-secondary: #ffffff;
+  --p-color-text: #202223;
+  --p-color-text-subdued: #6d7175;
+  --p-color-border: #c9cccf;
+  --p-color-icon: #5c5f62;
+  --p-color-fill-brand: #008060;
+  --p-color-fill-success: #008060;
+  --p-color-fill-critical: #d72c0d;
+  --p-color-fill-warning: #b98900;
+  --p-color-fill-info: #0080a3;
+  --p-color-bg-fill-brand: #008060;
+  --p-color-bg-fill-success: #008060;
+  --p-color-bg-fill-critical: #d72c0d;
+  --p-color-bg-fill-warning: #b98900;
+  --p-color-bg-fill-info: #0080a3;
+  --p-border-radius-100: 0.25rem;
+  --p-border-radius-200: 0.5rem;
+  --p-border-radius-300: 0.75rem;
+  --p-border-radius-400: 1rem;
+  --p-space-100: 0.25rem;
+  --p-space-200: 0.5rem;
+  --p-space-300: 0.75rem;
+  --p-space-400: 1rem;
+  --p-space-500: 1.25rem;
+  --p-space-600: 1.5rem;
+  --p-space-800: 2rem;
+  --p-font-size-75: 0.75rem;
+  --p-font-size-100: 0.875rem;
+  --p-font-size-200: 1rem;
+  --p-font-size-300: 1.25rem;
+  --p-font-weight-semibold: 600;
+  --p-font-family-sans: -apple-system, BlinkMacSystemFont, 'San Francisco', 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+}
+
+@layer base {
+  * {
+    border-color: var(--border);
+  }
+
+  body {
+    background: var(--background);
+    color: var(--foreground);
+    font-family: var(--p-font-family-sans);
+  }
+}
